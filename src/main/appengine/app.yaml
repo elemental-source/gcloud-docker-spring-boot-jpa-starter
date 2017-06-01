@@ -1,0 +1,15 @@
+runtime: custom
+env: flex
+
+runtime_config:  # Optional
+  jdk: openjdk8
+
+health_check:
+  enable_health_check: False
+
+handlers:
+- url: /.*
+  script: this field is required, but ignored
+
+manual_scaling:
+  instances: 1
